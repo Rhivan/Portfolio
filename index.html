@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <!-- Materialize CSS CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <!-- Google Fonts + Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .hero {
+      background: url('https://picsum.photos/1600/500?grayscale') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+    .section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="blue darken-3">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Mon Portfolio</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="center-align">
+      <h2>Bienvenue !</h2>
+      <p>Je suis développeur web passionné</p>
+    </div>
+  </div>
+
+  <!-- À propos -->
+  <section id="about" class="section container">
+    <div class="row">
+      <div class="col s12 m6">
+        <h4>À propos de moi</h4>
+        <p>Je m'appelle Jean Dupont, développeur web spécialisé en front-end. J'aime créer des interfaces modernes, accessibles et performantes.</p>
+      </div>
+      <div class="col s12 m6">
+        <img src="https://via.placeholder.com/400x300" alt="Moi" class="responsive-img z-depth-2">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects" class="section grey lighten-4">
+    <div class="container">
+      <h4 class="center">Mes projets</h4>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://via.placeholder.com/300x200">
+              <span class="card-title">Projet 1</span>
+            </div>
+            <div class="card-content">
+              <p>Un site de e-commerce moderne fait avec React.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://via.placeholder.com/300x200">
+              <span class="card-title">Projet 2</span>
+            </div>
+            <div class="card-content">
+              <p>Une application météo en JavaScript Vanilla.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://via.placeholder.com/300x200">
+              <span class="card-title">Projet 3</span>
+            </div>
+            <div class="card-content">
+              <p>Portfolio interactif avec Materialize CSS.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container">
+    <h4 class="center">Contactez-moi</h4>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="name" type="text" class="validate">
+            <label for="name">Nom</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="message" class="materialize-textarea"></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+        <div class="center">
+          <button class="btn waves-effect blue darken-3" type="submit">
+            Envoyer
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer blue darken-3">
+    <div class="container center">
+      © 2025 Jean Dupont. Tous droits réservés.
+    </div>
+  </footer>
+
+  <!-- Materialize JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
