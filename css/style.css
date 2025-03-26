@@ -1,0 +1,15 @@
+.hero {
+    background: url('https://picsum.photos/1600/500?grayscale') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 4px #000;
+  }
+  
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
