@@ -10,31 +10,24 @@
 
   <!-- Google Fonts + Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <!-- Gestion du mode maintenance + chargement du CSS -->
-  
 </head>
 
 <body>
+
+  <script>
+    const enMaintenance = true;
+
+    // Vérifie si le site est en maintenance et redirige si nécessaire
+    if (enMaintenance) {
+      window.location.href = "html/maintenance.html";
+    }
+  </script>
 
   <!-- Conteneurs HTML dynamiques -->
   <div id="header"></div>
   <div id="about"></div>
   <div id="projects"></div>
   <div id="footer"></div>
-
-  <script>
-    const enMaintenance = true;
-
-    if (!enMaintenance) {
-      const styleLink = document.createElement("link");
-      styleLink.rel = "stylesheet";
-      styleLink.href = "css/style.css";
-      document.head.appendChild(styleLink);
-    } else {
-      window.location.href = "html/maintenance.html";
-    }
-  </script>
 
   <!-- JS de chargement dynamique -->
   <script>
