@@ -13,26 +13,25 @@
 
   <!-- Gestion du mode maintenance + chargement du CSS -->
   <script>
-    const enMaintenance = true; // ← Passe à true pour activer la page maintenance
+    const enMaintenance = false;
 
     if (!enMaintenance) {
       const styleLink = document.createElement("link");
       styleLink.rel = "stylesheet";
-      styleLink.href = "css/style.css"; // Assure-toi que ce chemin est correct
+      styleLink.href = "css/style.css";
       document.head.appendChild(styleLink);
     } else {
-      window.location.href = "html/maintenance.html"; // Redirection si maintenance active
+      window.location.href = "html/maintenance.html";
     }
   </script>
 </head>
+
 <body>
 
   <!-- Conteneurs HTML dynamiques -->
   <div id="header"></div>
   <div id="about"></div>
-
-  <!-- (Tu peux ajouter ici une section Projets directement ou en inclure une autre si tu veux) -->
-
+  <div id="projects"></div>
   <div id="footer"></div>
 
   <!-- JS de chargement dynamique -->
@@ -45,8 +44,9 @@
 
     if (!enMaintenance) {
       loadHTML("header", "html/header.html");
-      //loadHTML("about", "html/about.html");
-      //loadHTML("footer", "html/footer.html");
+      loadHTML("about", "html/about.html");
+      loadHTML("projects", "html/projects.html");
+      loadHTML("footer", "html/footer.html");
     }
   </script>
 
